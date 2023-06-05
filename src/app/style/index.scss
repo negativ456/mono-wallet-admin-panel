@@ -51,6 +51,10 @@ svg {
   .react-calendar__tile--active {
     background: #424242;
   }
+
+  .react-calendar__tile:enabled:hover, .react-calendar__tile:enabled:focus {
+    background-color: #424242;
+  }
   button {
     color: var(--primary-color);
     border-radius: 20px;

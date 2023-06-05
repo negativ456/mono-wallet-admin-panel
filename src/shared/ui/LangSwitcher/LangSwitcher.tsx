@@ -8,6 +8,7 @@ import React from "react";
 import i18n from "i18next";
 
 import { Select, SelectOption, SelectProps } from "shared/ui/Select/Select";
+import i18next from "i18next";
 
 interface LangSwitcherProps extends SelectProps<string> {
   className?: string;
@@ -38,7 +39,7 @@ export const LangSwitcher = ({
   ...otherProps
 }: LangSwitcherProps) => {
   const { t } = useTranslation();
-  console.log(i18n.language);
+  console.log(i18next.languages);
   const changeLang = async (newLang: string) => {
     await i18n.changeLanguage(newLang);
   };

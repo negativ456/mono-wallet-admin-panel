@@ -27,6 +27,7 @@ export const StatusChangesPage = ({ className }: StatusChangesPageProps) => {
               theme={TextTheme.INACTIVE}
               textSize={TextSize.FS18}
               direction={"reverse"}
+              arrowColor={"#676067"}
               to={"/"}
             >
               Go back

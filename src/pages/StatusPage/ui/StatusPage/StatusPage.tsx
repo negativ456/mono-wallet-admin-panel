@@ -16,7 +16,6 @@ export const StatusPage = ({ className }: StatusPageProps) => {
   return (
     <VStack gap={"20"} className={classNames(cls.StatusPage, className)}>
       <Checkbox
-        disabled
         orientation={"right"}
         labelTheme={TextTheme.PRIMARY}
         label={"Disable all ‘download’ buttons"}

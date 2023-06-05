@@ -26,6 +26,7 @@ export const CalendarModal = ({
   return (
     <Modal
       theme={"empty"}
+      onClose={onClose}
       {...otherProps}
       className={classNames(cls.CalendarModal, className)}
     >
