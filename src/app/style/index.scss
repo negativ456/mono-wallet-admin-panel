@@ -1,0 +1,58 @@
+@import "fonts/SFProText/font";
+@import "themes/dark";
+@import "themes/light";
+@import "variables";
+@import "reset";
+body {
+  font-family: 'SF Pro Text', sans-serif;
+  background: var(--bg-color);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+svg {
+  transition: fill var(--transition-duration), transform var(--transition-duration);
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.App {
+  overflow: hidden;
+}
+
+
+*::-webkit-scrollbar {
+  background: #E18BFF;
+  width: 2px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #35293E;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #E18BFF;
+}
+
+.react-calendar {
+  background: var(--dark-color) !important;
+  border: none !important;
+  border-radius: 10px;
+  .react-calendar__tile--now {
+    background: #424242;
+  }
+  .react-calendar__tile--active {
+    background: #424242;
+  }
+  button {
+    color: var(--primary-color);
+    border-radius: 20px;
+  }
+}

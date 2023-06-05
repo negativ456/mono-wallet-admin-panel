@@ -1,0 +1,26 @@
+.Table_wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 500px;
+  overflow-y: auto;
+}
+
+.table {
+  border: none;
+  width: 100%;
+}
+
+.rowGap5 {
+  border-spacing: 0 5px;
+}
+
+.rowGap20 {
+  border-spacing: 0 20px;
+}
+
+@media (max-width: 480px) {
+  .Table_wrapper {
+    justify-content: start;
+  }
+}

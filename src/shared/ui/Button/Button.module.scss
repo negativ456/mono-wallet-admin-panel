@@ -1,0 +1,114 @@
+@property --myColor1 {
+  syntax: '<color>';
+  initial-value: #FFF;
+  inherits: false;
+}
+
+@property --myColor2 {
+  syntax: '<color>';
+  initial-value: #FFF;
+  inherits: false;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  gap: 15px;
+  cursor: pointer;
+  transition: --myColor1 var(--transition-duration), --myColor2 var(--transition-duration);
+  span {
+    white-space: nowrap;
+  }
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.normal {
+  background: radial-gradient(34.54% 63.04% at 29.98% 85.91%, var(--myColor1) 0%, var(--myColor2) 100%);
+  //background: var(--bg-inverted);
+  &:hover {
+    --myColor1: #E18BFF;
+    --myColor2: #836FFF;
+    span {
+      color: var(--primary-color);
+    }
+    // background: var(--text-gradient);
+  }
+}
+
+.blue {
+  background: var(--button-blue);
+}
+
+.dark {
+  background: var(--button-dark);
+  &:hover {
+    background: var(--bg-inverted);
+    span {
+      color: var(--inverted-color);
+    }
+    svg {
+      color: var(--inverted-color);
+    }
+  }
+}
+
+.dark-gray {
+  background: var(--dark-gray);
+  &:hover {
+    background: var(--bg-inverted);
+    span {
+      color: var(--inverted-color);
+    }
+  }
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.inverted {
+  background: var(--bg-color);
+  color: var(--inverted-color);
+}
+
+.gradient_hover {
+  background: radial-gradient(34.54% 63.04% at 29.98% 85.91%, var(--myColor1) 0%, var(--myColor2) 100%);
+  &:hover {
+    --myColor1: #E18BFF;
+    --myColor2: #836FFF;
+    span {
+      color: var(--inverted-color);
+    }
+    // background: var(--text-gradient);
+  }
+}
+
+.xs {
+  padding: 15px 30px;
+}
+
+.s {
+  width: 250px;
+  height: 70px;
+}
+
+.m {
+  width: 400px;
+  height: 100px;
+}
+
+.empty {
+  background: none;
+  width: auto;
+  height: auto;
+  border-radius: 0;
+}

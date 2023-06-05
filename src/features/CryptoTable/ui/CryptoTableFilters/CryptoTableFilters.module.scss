@@ -1,0 +1,16 @@
+.CryptoTableFilters {
+}
+
+.categories {
+  gap: 75px;
+}
+
+.input {
+  width: 300px;
+}
+
+@media (max-width: 480px) {
+  .input {
+    width: 100%;
+  }
+}

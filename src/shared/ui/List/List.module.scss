@@ -1,0 +1,22 @@
+.List {
+  ul {
+    li {
+      position: relative;
+      color: var(--primary-color);
+    }
+  }
+}
+
+.dash {
+  list-style-type: none;
+  li:before {
+    content: '\2014';
+    position: absolute;
+    margin-left: -20px;
+    margin-top: 5px;
+  }
+}
+
+.title {
+  margin-bottom: 20px;
+}

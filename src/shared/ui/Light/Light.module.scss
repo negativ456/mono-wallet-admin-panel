@@ -1,0 +1,35 @@
+.Light {
+  position: absolute;
+  z-index: -1;
+}
+
+.gradient {
+  background: var(--text-gradient);
+}
+
+.normal {
+  background: var(--light-normal);
+}
+
+.blur250 {
+  filter: blur(250px);
+}
+
+.blur350 {
+  filter: blur(350px);
+}
+
+.S {
+  width: 507px;
+  height: 487px;
+}
+
+.M {
+  width: 750px;
+  height: 700px;
+}
+
+.L {
+  width: 840px;
+  height: 800px;
+}

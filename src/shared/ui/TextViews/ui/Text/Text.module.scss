@@ -1,0 +1,87 @@
+.Text {
+  position: relative;
+  white-space: pre-line;
+  transition: color var(--transition-duration);
+}
+
+.line {
+  position: absolute;
+  height: 2px;
+  background: var(--primary-color);
+  left: 0;
+  bottom: 0;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.h1 {
+  font-size: 96px;
+  font-weight: 600;
+  line-height: 100%;
+}
+
+.h2 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.gradient {
+  background: var(--text-gradient);
+  background-size: 200% auto;
+  color: #836FFF;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+  svg {
+    fill: #836FFF;
+  }
+}
+
+.moving {
+  animation: move_line 32s linear infinite;
+}
+
+.gradient_animation {
+  background: var(--text-gradient);
+  background-size: 200% auto;
+  color: #836FFF;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s linear infinite;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@keyframes move_line {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

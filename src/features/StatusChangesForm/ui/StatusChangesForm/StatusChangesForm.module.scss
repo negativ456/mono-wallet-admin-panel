@@ -1,0 +1,25 @@
+.StatusChangesForm {
+
+}
+
+.actual {
+  color: #F7931A;
+}
+
+.resolve {
+  color: #63B73C;
+}
+
+.activeActual {
+  background: #F7931A;
+  span {
+    color: var(--primary-color)
+  }
+}
+
+.activeResolved {
+  background: #63B73C;
+  span {
+    color: var(--primary-color)
+  }
+}

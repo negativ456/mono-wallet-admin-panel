@@ -1,0 +1,41 @@
+.AppLink {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 25px;
+  text-decoration: none;
+  &:hover {
+    .arrow {
+      transform: translateX(5px);
+    }
+  }
+}
+
+.arrow {
+}
+
+.active {
+
+}
+
+.small_gap {
+  gap: 10px;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+
+  .arrow {
+    transform: scale(-1, 1);
+  }
+
+  &:hover {
+    .arrow {
+      transform: translateX(-5px) scale(-1, 1);
+    }
+  }
+}

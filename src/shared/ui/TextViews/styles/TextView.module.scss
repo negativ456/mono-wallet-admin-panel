@@ -1,0 +1,107 @@
+.fw400 {
+  font-weight: 400;
+}
+
+.fw500 {
+  font-weight: 500;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.fw700 {
+  font-weight: 700;
+}
+
+.fw800 {
+  font-weight: 800;
+}
+
+.FS16 {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.FS18 {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.FS20 {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+.FS24 {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.FS28 {
+  font-size: 28px;
+}
+
+.FS32 {
+  font-size: 32px;
+}
+
+.FS36 {
+  font-size: 36px;
+}
+
+.FS40 {
+  font-size: 40px;
+}
+
+.FS48 {
+  font-size: 48px;
+}
+
+.FS96 {
+  font-size: 96px;
+  line-height: 100%;
+}
+
+.FS115 {
+  font-size: 115px;
+}
+
+.FS128 {
+  font-size: 128px;
+}
+
+.error {
+  color: var(--error-color);
+}
+
+.success {
+  color: var(--success-color);
+}
+
+.primary {
+  color: var(--primary-color);
+}
+
+.pastel_blue {
+  color: var(--pastel-blue);
+}
+
+.inverted {
+  color: var(--inverted-color);
+}
+
+.secondary {
+  color: var(--secondary-color);
+}
+
+.inactive {
+  color: var(--inactive-color);
+}
+
+.gradient {
+  background: var(--text-gradient);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

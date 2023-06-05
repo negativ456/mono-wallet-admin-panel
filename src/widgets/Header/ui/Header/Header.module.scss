@@ -1,0 +1,20 @@
+.Header {
+  backdrop-filter: var(--overlay-blur);
+  height: 100%;
+}
+
+.logo {
+  fill: var(--primary-color);
+}
+
+.header_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: var(--navbar-height);
+  background: var(--navbar-background);
+}
+
+

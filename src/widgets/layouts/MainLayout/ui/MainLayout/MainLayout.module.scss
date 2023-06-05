@@ -1,0 +1,25 @@
+.MainLayout {
+  padding-top: 50px;
+  position: relative;
+  height: 100%;
+}
+
+.link {
+  padding: 16.5px 30px;
+  background: #101010;
+  border-radius: 7.5px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.left {
+  padding-right: 70px;
+  border-right: 2px solid var(--dark-color);
+}
+
+.right {
+  width: 100%;
+  padding-left: 70px;
+}

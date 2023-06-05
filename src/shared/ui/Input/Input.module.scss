@@ -1,0 +1,97 @@
+.label {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.Input {
+  width: 100%;
+  padding: 20px 30px;
+  color: var(--primary-color);
+  background: var(--dark-color);
+  font-weight: 500;
+  font-size: 20px;
+  outline: none;
+  border-radius: 10px;
+  &::placeholder {
+    color: var(--inactive-color);
+  }
+}
+
+.smallPadding {
+  .Input {
+    padding: 10px 30px;
+  }
+}
+
+.gray {
+  .Input {
+    color: var(--inverted-color);
+    background: var(--light-gray);
+    &::placeholder {
+      color: var(--dropdown-background);
+    }
+  }
+  .label {
+    color: var(--inverted-color);
+  }
+}
+
+.dark-gray {
+  .Input {
+    background: var(--dark-gray);
+    color: var(--primary-color);
+  }
+  &::placeholder {
+    color: var(--inactive-color);
+  }
+  .label {
+    color: var(--primary-color);
+  }
+}
+
+.normal {
+  .label {
+    color: var(--primary-color);
+  }
+}
+
+.S {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.M {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.required {
+  &:after {
+    content: '*';
+    color: var(--error-color);
+    margin-left: 5px;
+  }
+}
+
+.max {
+  width: 100%;
+}
+
+@media (max-width: 1440px) {
+  .S {
+    font-size: 14px;
+  }
+  .M {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .S {
+    font-size: 18px;
+  }
+
+  .Input {
+    font-size: 18px;
+  }
+}
